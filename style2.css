@@ -1,0 +1,44 @@
+body {
+    background-color: #123b26;
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.board {
+    width: 80%;
+}
+
+.board-title {
+    font-family: "Open Sans", sans-serif;
+    border-radius: 8px 8px 0 0;
+    background-color: rgb(38, 37, 39);
+    font-size: 24px;
+    color: white;
+}
+
+.board-item {
+    font-family: "Open Sans", sans-serif;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+}
+
+.board-item:last-child {
+    border-radius: 0 0 8px 8px;
+}
+
+.board-item .event, .board-item .winner {
+    font-size: 24px;
+    color: black;
+    font-weight: 600;
+}
+
+.board-title, .board-item {
+    padding: 24px;
+}
